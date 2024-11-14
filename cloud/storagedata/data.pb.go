@@ -127,6 +127,9 @@ type StorageObjectData struct {
 	SelfLink string `protobuf:"bytes,101,opt,name=self_link,json=selfLink,proto3" json:"self_link,omitempty"`
 	// The kind of item this is. For objects, this is always "storage#object".
 	Kind string `protobuf:"bytes,102,opt,name=kind,proto3" json:"kind,omitempty"`
+	// Missing field.
+	// Field should be added to proto/google/events/cloud/storage/v1/data.proto
+	TimeFinalized *timestamppb.Timestamp `protobuf:"bytes,103,opt,name=time_finalized,json=timeFinalized,proto3" json:"time_finalized,omitempty"`
 }
 
 func (x *StorageObjectData) Reset() {
